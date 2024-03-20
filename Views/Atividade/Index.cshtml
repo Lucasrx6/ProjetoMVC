@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Contatos";
+}
+<div class="text-center">
+    <h1 class="display-4 justify-content-center">Cadastro de produtos</h1>
+    <span>Cadastre produtos nesse sistema CRUD</span>
+</div>
+<div class="container-fluid">
+    <div>
+        <a class="btn btn-primary" type="submit" asp-controller="Atividade" asp-action="Criar">Adicionar novo</a>
+    </div>
+</div>
+<div class="container-fluid">
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>mdo</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a class="btn btn-warning" asp-controller="Atividade" asp-action="Editar" type="submit">Editar</a>
+                    <a class="btn btn-danger" asp-controller="Atividade" asp-action="Excluir" type="submit">Excluir</a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
